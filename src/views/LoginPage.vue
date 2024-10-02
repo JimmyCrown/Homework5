@@ -1,17 +1,17 @@
 <template>
-    <form class="" @submit.prevent>
+    <form class="m-10" @submit.prevent>
         <div>
-            <lable for="username" class="">Username</lable>
+            <lable for="username" class="block mb-2 font-bold">Username</lable>
                 <input id="username" v-model="username" type="text" placeholder="Username">
             
         </div>
         <div>
-            <lable for="password" class="">Password</lable>
+            <lable for="password" class="block mb-2 font-bold">Password</lable>
                 <input id="password" v-model="password" type="password" placeholder="Password">
             
         </div>
 
-        <button @click="logUserIn" class="">LOGIN</button>
+        <button @click="logUserIn" class="bg-green-500 mt-4 px-4 py-2 hover:bg-green-800 hover:text-white">LOGIN</button>
 
     </form>    
 </template>
